@@ -20,8 +20,7 @@ is the meta-evaluation dataset built to support this paradigm.
 
 AMI-ME is derived from the [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/)
 (Carletta et al., 2005). We refined the original coarse, discontinuous topic
-segmentation into continuous fine-grained units with an LLM-assisted
-reference-based method, and then collected human effectiveness annotations
+segmentation into continuous fine-grained units with the reference-based topic segmentation method, and then collected human effectiveness annotations
 on every resulting segment.
 
 

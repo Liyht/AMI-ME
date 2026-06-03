@@ -1,4 +1,4 @@
-# AMI-ME — Automatic Meeting Effectiveness Evaluation Framework
+# Automatic Meeting Effectiveness Evaluation Framework
 
 Code for the ACL 2026 paper
 **"Rethinking Meeting Effectiveness: A Benchmark and Framework for Temporal

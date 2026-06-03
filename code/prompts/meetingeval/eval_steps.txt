@@ -1,0 +1,8 @@
+1. Read and understand the meeting segment transcript.
+2. Recall the overall meeting objectives, which are {{OVERALL_MEETING_OBJECTIVES}}.
+3. Assess the segment's relevance to the meeting objectives and its contribution to achieving them.
+4. Evaluate the time utilization during the segment, considering factors such as focus, pacing, and unnecessary diversions.
+5. Determine the value delivered by the segment relative to the time invested, analyzing both the strengths and limitations of this segment.
+6. Assign a score from 1 to 5 based on the evaluation criteria.
+7. Provide the assigned score as the evaluation result.
+8. Provide explanation.

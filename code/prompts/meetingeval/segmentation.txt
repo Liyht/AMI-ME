@@ -1,0 +1,38 @@
+Please perform **fine-grained topic segmentation** on the meeting transcript.
+
+Instructions:
+1. Divide the transcript into distinct segments based on topic changes. Ensure each segment represents a coherent topic discussion with clear boundaries for optimal topic segmentation.
+2. Make the segmentation as fine-grained as possible, identifying even subtle topic shifts, while maintaining topic coherence within each segment.
+3. For each segment, provide:
+    * `start_id`: The ID of the first utterance of the segment.
+    * `end_id`: The ID of the last utterance of the segment.
+    * `topic`: A concise phrase describing the main topic.
+    * `description`: A one-sentence summary of the segment content.
+4. Critical Check for Completeness and Continuity:
+    * **No Gaps**: The `start_id` ID of any segment (except the first) must immediately follow the `end_id` ID of the preceding segment. For example, if segment N ends at ID 15, segment N+1 must start at ID 16.
+    * **Full Coverage**: All utterances from the first utterance ID provided in the transcript to the very last utterance ID MUST be included in a segment.
+    * **Final Utterance**: The `end_id` ID of the very last segment **must** be the ID of the last utterance in the entire `Meeting transcripts`. The last utterance ID in the provided transcript is `{{LAST_UTTERANCE_ID_PLACEHOLDER}}`. 
+
+Format your response in a structured JSON array as specified below. Ensure the JSON is valid.
+Example:
+```json
+[
+    {
+        "topic": [Concise Topic Title],
+        "description": [Brief one-sentence description of this segment's content.],
+        "start_id": [ID of the first utterance of the transcript, e.g., 1],
+        "end_id": [ID of the last utterance of this segment]
+    },
+    // ... (Ensure segments are contiguous and cover all utterances)
+    {
+        "topic": [Concise Topic Title],
+        "description": [Brief one-sentence description of this segment's content.],
+        "start_id": [ID of the first utterance of this segment],
+        "end_id": [ID of the last utterance of the entire transcript, must match {{LAST_UTTERANCE_ID_PLACEHOLDER}} or the actual last ID]
+    }
+]
+```
+
+Meeting transcripts:
+Each utterance is formatted as 'ID: {ID} [{START_TIME} - {END_TIME}] [{SPEAKER}]: {TEXT}'
+{{MEETING_TRANSCRIPTS}}

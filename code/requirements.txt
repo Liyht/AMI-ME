@@ -1,0 +1,11 @@
+# Core framework + meta-evaluation dependencies.
+# NOTE: vLLM is required only to serve open-source models locally (see start_server/);
+# install it separately following https://docs.vllm.ai/ as it is hardware-specific.
+openai
+google-genai
+python-dotenv
+pydantic
+fire
+tqdm
+numpy
+scipy

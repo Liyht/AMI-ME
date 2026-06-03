@@ -1,0 +1,5 @@
+{
+    "llama3.3": "meta-llama/Llama-3.3-70B-Instruct",
+    "qwen3": "Qwen/Qwen3-32B",
+    "deepseekR1": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+}

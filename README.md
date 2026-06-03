@@ -11,10 +11,17 @@ is the meta-evaluation dataset built to support this paradigm.
 ## Release status
 
 - [x] **Dataset** — released in this repository (`AMI_ME.json`).
-- [ ] **Code** — the LLM-based automatic evaluation framework
+- [x] **Code** — the LLM-based automatic evaluation framework
   (topic segmentation + objective classification + segment-level scoring +
-  segmentation alignment) is being cleaned up and will be released here in a
-  follow-up update.
+  segmentation alignment) is released in [`code/`](code/).
+
+## Repository layout
+
+- [`AMI_ME.json`](AMI_ME.json) — the AMI-ME meta-evaluation dataset (the data
+  release; schema described below).
+- [`code/`](code/) — the automatic meeting effectiveness evaluation framework and
+  the meta-evaluation script. See [`code/README.md`](code/README.md) for setup and
+  usage. The framework reads ground-truth scores directly from `AMI_ME.json`.
 
 ## Dataset summary
 
@@ -97,6 +104,10 @@ The dataset is released under the
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 license, consistent with the original AMI Meeting Corpus. See
 [`LICENSE`](LICENSE) for the full text.
+
+The code in [`code/`](code/) is released separately under the
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0); see
+[`code/LICENSE`](code/LICENSE).
 
 The original audio and transcripts are the property of the AMI Consortium
 and are subject to the AMI Corpus license; users who need the raw media

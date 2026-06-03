@@ -1,0 +1,24 @@
+Example:
+Each utterance is in format "[START_TIME_IN_SECOND:END_TIME_IN_SECOND] [SPEAKER]  UTTERANCE_CONTENT"
+
+Meeting transcripts:
+{{MEETING_TRANSCRIPTS}}
+
+Meeting segmentation transcripts:
+{{SEGMENT_TRANSCRIPTS}}
+
+Overall Meeting Objectives:
+{{OVERALL_MEETING_OBJECTIVES}}
+
+Output Format:
+Meeting Segment Strengths:
+[Analyze meeting segment strengths based on Evaluation Criteria]
+
+Meeting Segment Limitations:
+[Analyze meeting segment limitations based on Evaluation Criteria]
+
+Evaluation Form (scores ONLY):
+- Meeting Segment Effective (1-5): [SCORE]
+
+Justification:
+[Provide explanation]

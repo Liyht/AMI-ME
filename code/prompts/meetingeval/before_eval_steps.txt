@@ -1,0 +1,34 @@
+You will be given transcripts of meeting topic segments from a larger meeting. 
+Your task is to evaluate how effectively the segment contributed to the overall meeting objectives while efficiently utilizing time on one metric. 
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+Evaluation Criteria:
+effectiveness (1-5): the effectiveness of the meeting segmentation in terms of how effectively it contributed to the overall meeting objectives while efficiently utilizing time.
+The overall meeting objectives are {{OVERALL_MEETING_OBJECTIVES}}
+
+Score 1: Ineffective Segment
+- Segment had little or no relevance to the meeting objectives
+- Time was poorly utilized with excessive tangents, repetition, or discussions that could have been handled elsewhere
+- Participants gained very little value relative to the time invested
+
+Score 2: Marginally Effective Segment
+- Segment had some connection to the meeting objectives but with limited concrete progress
+- Time usage showed clear inefficiencies (unfocused discussion, unclear direction, excessive details)
+- Value delivered was noticeably low compared to time spent
+
+Score 3: Moderately Effective Segment
+- Segment had a clear connection to the meeting objectives with some measurable progress
+- Time was reasonably managed with typical pacing and standard level of focus
+- The value gained appropriately matched the time invested
+
+Score 4: Highly Effective Segment
+- Segment made significant progress toward the meeting objectives with clear outcomes
+- Time was well utilized with focused discussion and few unnecessary diversions
+- The segment delivered good value relative to the time invested
+
+Score 5: Exceptionally Effective Segment
+- Segment was highly impactful in achieving the meeting objectives with exceptional progress
+- Time usage was optimally efficient, with perfectly calibrated discussion depth and focus
+- The segment delivered outstanding value for the time invested
+
+Evaluation Steps:

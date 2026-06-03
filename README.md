@@ -125,3 +125,14 @@ If you use AMI-ME, please cite our paper:
   year      = {2026}
 }
 ```
+
+And please also cite the original AMI corpus:
+
+```bibtex
+@inproceedings{10.1007/11677482_3,
+  title = {The AMI meeting corpus: a pre-announcement},
+  author = {Carletta, Jean and Ashby, Simone and Bourban, Sebastien and Flynn, Mike and Guillemot, Mael and Hain, Thomas and Kadlec, Jaroslav and Karaiskos, Vasilis and Kraaij, Wessel and Kronenthal, Melissa and Lathoud, Guillaume and Lincoln, Mike and Lisowska, Agnes and McCowan, Iain and Post, Wilfried and Reidsma, Dennis and Wellner, Pierre},
+  booktitle = {Proceedings of the Second International Conference on Machine Learning for Multimodal Interaction},
+  year = {2005},
+}
+```

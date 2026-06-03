@@ -33,11 +33,10 @@ cp .env.example .env   # then set GEMINI_API_KEY / OPENAI_API_KEY
 ## Build the pipeline input
 
 The pipeline operates on the meeting transcript, which is regenerated from the
-released dataset so `AMI_ME.json` stays the single source of truth (no transcript
-data is duplicated in this folder):
+released `AMI_ME.json`:
 
 ```bash
-python data/build_meetingeval.py   # ../AMI_ME.json -> data/AMI/meetingeval.json (+ meetingeval_GTseg.json)
+python data/build_meetingeval.py   # ../AMI_ME.json -> data/AMI/meetingeval.json + meetingeval_GTseg.json
 ```
 
 ## Serving open-source models (optional)
@@ -56,7 +55,7 @@ APIs `gpt` / `gemini` / `gemini-pro`.
 ## Running the pipeline
 
 The entry point is [`vllm_eval.sh`](vllm_eval.sh). Edit the variables near the
-top (`task`, `data_subfolder`, `winsize`, objective/score modes) and
+top (`task`, `reasoning`, ...) and
 invoke with a model name:
 
 ```bash
@@ -68,8 +67,8 @@ Run the three `task` modes on the same `data_subfolder` / `model`. `seg` and
 outputs:
 
 1. **`seg`** — topic segmentation ([`prompts/meetingeval/segmentation.txt`](prompts/meetingeval/segmentation.txt)).
-   Runs several passes with `--continue_task`, then post-processes into
-   `meetingeval_LLM.json` (segments with start/end utterance IDs + text). Repeat several times to reduce broken responses.
+   Runs several passes with `--continue_task` to reduce broken responses, then post-processes into
+   `meetingeval_LLM.json` (segments with start/end utterance IDs + text).
 2. **`obj`** — multi-label objective classification
    ([`prompts/meetingeval/objective_classification.txt`](prompts/meetingeval/objective_classification.txt))
    against the categories in [`data/AMI/objectives.txt`](data/AMI/objectives.txt).
